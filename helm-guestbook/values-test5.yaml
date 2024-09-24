@@ -4,7 +4,7 @@
 
 ingress:
   hosts:
-    - host: argo-test1.kube.pd.lan
+    - host: argo-test5.kube.pd.lan
       paths:
         - path: /
           pathType: ImplementationSpecific

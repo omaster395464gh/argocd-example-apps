@@ -2,9 +2,11 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
+replicaCount: 3
+
 ingress:
   hosts:
-    - host: argo-test1.kube.pd.lan
+    - host: argo-test3.kube.pd.lan
       paths:
         - path: /
           pathType: ImplementationSpecific
