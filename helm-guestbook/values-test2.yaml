@@ -15,6 +15,7 @@ service:
   type: ClusterIP
   port: 80
 
+
 ingress:
   enabled: true
   annotations:
@@ -22,7 +23,10 @@ ingress:
     # kubernetes.io/tls-acme: "true"
   path: /
   hosts:
-    - argo-test2.kube.pd.lan
+    - host: argo-test2.kube.pd.lan
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
